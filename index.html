@@ -978,6 +978,39 @@
         align-items: stretch;
       }
     }
+
+    #s5 .screen-img {
+      aspect-ratio: 16 / 9;
+      max-height: 200px;
+    }
+
+    #s6 .screen-img {
+      aspect-ratio: 16 / 9;
+      max-height: 200px;
+    }
+
+    #s3 .slide-body {
+      margin-bottom: 10px;
+    }
+
+    /* container spacing */
+    .architecture-visual {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    /* image sizing */
+    .architecture-visual img {
+      width: 100%;
+      max-width: 1200px;
+      /* 👈 adjust if needed */
+      max-height: 840px;
+      /* 👈 prevents overflow */
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
   </style>
 </head>
 
@@ -1008,8 +1041,8 @@
         <h1 class="slide-title">Customer Invoice &amp; <em>Payment Portal</em></h1>
         <p class="slide-body">A production-grade self-service portal for invoice management, online payments, and
           account administration — integrated with Oracle EBS, Fusion, and leading payment gateways.</p>
-        <div class="hero-btns"><button class="btn btn-solid" data-goto="5">📷 View Screenshots</button><button
-            class="btn btn-outline" data-goto="3">📊 See Architecture</button></div>
+        <div class="hero-btns"><button class="btn btn-solid" data-goto="4">📷 View Screenshots</button><button
+            class="btn btn-outline" data-goto="2">📊 See Architecture</button></div>
         <div class="hero-stats">
           <div>
             <div class="stat-num">360<span class="stat-symbol">°</span></div>
@@ -1079,9 +1112,16 @@
       <div class="slide-inner wide">
         <div class="two-col">
           <div><span class="eyebrow">System architecture</span>
-            <h2 class="slide-title slide-title--md">Built on open,<br><em>pluggable layers</em></h2>
+            <h2 class="slide-title slide-title--md">Built on open, <em>pluggable layers</em></h2>
             <p class="slide-body slide-body--narrow">Every component is swappable. Change your ERP, IAM, payment
               gateway, or cloud provider without touching the portal core.</p>
+            <div class="architecture-visual">
+              <div class="screen-card" data-img="screenshots/architecture-diagram.png">
+                <div class="screen-img">
+                  <img src="screenshots/architecture-diagram.png" alt="Architecture diagram">
+                </div>
+              </div>
+            </div>
           </div>
           <div class="arch-layers">
             <div class="arch-layer">
@@ -1281,8 +1321,7 @@
       <div class="glow glow--integrations"></div>
       <div class="slide-inner"><span class="eyebrow">Plug-in integrations</span>
         <h2 class="slide-title slide-title--lg">Works with your <em>existing stack</em></h2>
-        <p class="slide-body">Every component is swappable — ERP, IAM, cloud, and payment gateway adapt without a
-          rewrite.</p>
+        <p class="slide-body">Swap ERP, IAM, payment gateways, or cloud providers without touching the portal core.</p>
         <div class="int-wrap">
           <div class="int-pill"><span class="int-dot"></span><span>
               <div class="int-name">Oracle EBS R12/R11</div>
@@ -1423,7 +1462,7 @@
         <p class="slide-body">Let's walk through the live portal and tailor the architecture to your client's ERP, IAM,
           and payment stack.</p>
         <div class="hero-btns"><a href="mailto:suda@idproitc.com" class="btn btn-solid">📧 Schedule a demo</a><button
-            class="btn btn-outline" data-goto="3">📊 Review architecture</button></div>
+            class="btn btn-outline" data-goto="2">📊 Review architecture</button></div>
         <div class="contact-row">
           <div class="contact-item">🌐 <strong>www.idproitc.com</strong></div>
           <div class="contact-item">✉️ <strong>suda@idproitc.com</strong></div>
